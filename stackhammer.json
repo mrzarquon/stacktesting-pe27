@@ -3,6 +3,224 @@
   "accessKey": "cbarker pl west",
   "puppetVersion": "PUPPET_ENTERPRISE27",
   "master": {
+    "consoleData": {
+      "classes": [
+        {
+          "node_class": {
+            "name": "pe_accounts",
+            "created_at": "2012-10-31T21:56:04Z",
+            "updated_at": "2012-10-31T21:56:04Z"
+          }
+        },
+        {
+          "node_class": {
+            "name": "pe_compliance",
+            "created_at": "2012-10-31T21:56:04Z",
+            "updated_at": "2012-10-31T21:56:04Z"
+          }
+        },
+        {
+          "node_class": {
+            "name": "pe_mcollective",
+            "created_at": "2012-10-31T21:56:04Z",
+            "updated_at": "2012-10-31T21:56:04Z"
+          }
+        },
+        {
+          "node_class": {
+            "name": "profile::tomcat",
+            "created_at": "2013-03-22T18:39:21Z",
+            "updated_at": "2013-03-22T18:39:21Z"
+          }
+        },
+        {
+          "node_class": {
+            "name": "profile::tomcat::jenkins",
+            "created_at": "2013-03-22T18:39:32Z",
+            "updated_at": "2013-03-22T18:39:32Z"
+          }
+        },
+        {
+          "node_class": {
+            "name": "splunk",
+            "created_at": "2012-10-31T22:51:09Z",
+            "updated_at": "2012-10-31T22:51:09Z"
+          }
+        },
+        {
+          "node_class": {
+            "name": "testagents",
+            "created_at": "2013-03-22T19:35:56Z",
+            "updated_at": "2013-03-22T19:35:56Z"
+          }
+        },
+        {
+          "node_class": {
+            "name": "tomcat",
+            "created_at": "2012-10-31T22:51:16Z",
+            "updated_at": "2012-10-31T22:51:16Z"
+          }
+        },
+        {
+          "node_class": {
+            "name": "tomcat::jenkins",
+            "created_at": "2012-10-31T22:51:22Z",
+            "updated_at": "2012-10-31T22:51:22Z"
+          }
+        },
+        {
+          "node_class": {
+            "name": "tomcat::sunjdk",
+            "created_at": "2012-10-31T22:51:28Z",
+            "updated_at": "2012-10-31T22:51:28Z"
+          }
+        }
+      ],
+      "groups": [
+        {
+          "node_group": {
+            "name": "Splunk",
+            "assigned_node_group_ids": [],
+            "assigned_node_class_ids": [
+              4
+            ],
+            "created_at": "2012-10-31T22:49:34Z",
+            "updated_at": "2012-10-31T22:49:34Z"
+          }
+        },
+        {
+          "node_group": {
+            "name": "Splunk Forwarder",
+            "assigned_node_group_ids": [
+              2
+            ],
+            "assigned_node_class_ids": [],
+            "created_at": "2012-10-31T22:50:03Z",
+            "updated_at": "2012-10-31T22:50:03Z"
+          }
+        },
+        {
+          "node_group": {
+            "name": "Splunk Server",
+            "assigned_node_group_ids": [
+              2
+            ],
+            "assigned_node_class_ids": [],
+            "created_at": "2012-10-31T22:50:27Z",
+            "updated_at": "2012-10-31T22:50:27Z"
+          }
+        },
+        {
+          "node_group": {
+            "name": "stackhammer.synchronized",
+            "assigned_node_group_ids": [],
+            "assigned_node_class_ids": [],
+            "created_at": "2013-03-22T19:35:56Z",
+            "updated_at": "2013-03-22T19:35:56Z"
+          }
+        },
+        {
+          "node_group": {
+            "name": "Tomcat",
+            "assigned_node_group_ids": [],
+            "assigned_node_class_ids": [
+              8
+            ],
+            "created_at": "2012-10-31T22:50:55Z",
+            "updated_at": "2012-10-31T22:50:55Z"
+          }
+        },
+        {
+          "node_group": {
+            "name": "Tomcat Jenkins",
+            "assigned_node_group_ids": [
+              5
+            ],
+            "assigned_node_class_ids": [
+              9
+            ],
+            "created_at": "2012-10-31T22:52:25Z",
+            "updated_at": "2012-10-31T22:52:25Z"
+          }
+        }
+      ],
+      "nodes": [
+        {
+          "node": {
+            "name": "agent1",
+            "assigned_node_group_ids": [],
+            "assigned_node_class_ids": [
+              10
+            ],
+            "created_at": "2013-03-22T18:38:35Z",
+            "updated_at": "2013-03-22T19:39:21Z"
+          }
+        }
+      ],
+      "groupContributions": [
+        {
+          "node_group_class_membership": {
+            "node_group_id": 2,
+            "node_class_id": 4,
+            "created_at": "2012-10-31T22:51:40Z",
+            "updated_at": "2012-10-31T22:51:40Z"
+          }
+        },
+        {
+          "node_group_class_membership": {
+            "node_group_id": 5,
+            "node_class_id": 8,
+            "created_at": "2013-03-22T18:39:52Z",
+            "updated_at": "2013-03-22T18:39:52Z"
+          }
+        },
+        {
+          "node_group_class_membership": {
+            "node_group_id": 6,
+            "node_class_id": 9,
+            "created_at": "2013-03-22T18:40:06Z",
+            "updated_at": "2013-03-22T18:40:06Z"
+          }
+        }
+      ],
+      "nodeContributions": [
+        {
+          "node_class_membership": {
+            "node_id": 2,
+            "node_class_id": 10,
+            "created_at": "2013-03-22T19:35:59Z",
+            "updated_at": "2013-03-22T19:35:59Z"
+          }
+        }
+      ],
+      "subGroups": [
+        {
+          "node_group_edge": {
+            "from_id": 3,
+            "to_id": 2,
+            "created_at": "2012-10-31T22:50:03Z",
+            "updated_at": "2012-10-31T22:50:03Z"
+          }
+        },
+        {
+          "node_group_edge": {
+            "from_id": 4,
+            "to_id": 2,
+            "created_at": "2012-10-31T22:50:27Z",
+            "updated_at": "2012-10-31T22:50:27Z"
+          }
+        },
+        {
+          "node_group_edge": {
+            "from_id": 6,
+            "to_id": 5,
+            "created_at": "2012-10-31T22:52:25Z",
+            "updated_at": "2012-10-31T22:52:25Z"
+          }
+        }
+      ],
+      "lastSync": "2013-03-22T19:42:20Z"
+    },
     "type": "M1_LARGE",
     "deployState": "RUNNING",
     "image": "ami-14aa2524",
@@ -22,8 +240,21 @@
           "type": "T1_MICRO",
           "deployState": "RUNNING",
           "image": "ami-14aa2524",
+          "publicKeys": [
+            "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDiuh3j8KLFJIR/39956ZhilKtMTr7ivm9e6K4/pzU2Cqvg4pBeXPGglbJqz6TNnD+IL9PJefFwmNlxpim8ARY+h2zXN25SLhZzoM3/wPqt9Q5+r0ylpdlXGLCilMl7m2OfBPhvNDm5DJSCQ9XwRvt0K66DvZ6A/43jchtt6xFC7N9ZHCLXPFTeaEO19IyjGFtlS0eLpKRn9oVKAzwPOTKyuWD5aveHTlI0UqqZnY/aWvcq6mA8yymmbxOm9AkXaAyMoirdoH+7pHuMWPUw0keQzBfwHsXbeRP+G4I0QyTUJgqioXFU1bn4oDaprU1BP23F+agBedriewtiNewSqJWJ cbarker@puppetlabs.com"
+          ],
           "role": "testagents",
           "name": "agent1"
+        },
+        {
+          "type": "T1_MICRO",
+          "deployState": "RUNNING",
+          "image": "ami-20800c10",
+          "publicKeys": [
+            "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDiuh3j8KLFJIR/39956ZhilKtMTr7ivm9e6K4/pzU2Cqvg4pBeXPGglbJqz6TNnD+IL9PJefFwmNlxpim8ARY+h2zXN25SLhZzoM3/wPqt9Q5+r0ylpdlXGLCilMl7m2OfBPhvNDm5DJSCQ9XwRvt0K66DvZ6A/43jchtt6xFC7N9ZHCLXPFTeaEO19IyjGFtlS0eLpKRn9oVKAzwPOTKyuWD5aveHTlI0UqqZnY/aWvcq6mA8yymmbxOm9AkXaAyMoirdoH+7pHuMWPUw0keQzBfwHsXbeRP+G4I0QyTUJgqioXFU1bn4oDaprU1BP23F+agBedriewtiNewSqJWJ cbarker@puppetlabs.com"
+          ],
+          "role": "testagents",
+          "name": "agent2"
         }
       ],
       "name": "production"
